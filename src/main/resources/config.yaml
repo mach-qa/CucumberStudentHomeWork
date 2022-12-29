@@ -1,0 +1,10 @@
+urlData:
+  appId: 89a2ed8a594cc497a6273490e7ca59dd
+  baseURL: https://thetestingworldapi.com
+  apiPath: /api
+  studentsDetailsEndpoint: /studentsDetails
+testData:
+  studentFirstName: John
+  studentMiddleName: Kevin
+  studentLastName: Smith
+  studentDateOfBirth: 09/09/2022
