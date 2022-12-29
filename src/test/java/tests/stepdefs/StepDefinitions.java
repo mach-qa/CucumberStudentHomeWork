@@ -37,7 +37,7 @@ public class StepDefinitions extends TestBase {
 
     @When("details of student are saved")
     public void detailsOfStudentAreSaved() {
-        studentResponse = (StudentResponse) given()
+        studentResponse = given()
                 .spec(specifications.setupRequestSpecification())
                 .basePath(STUDENT_DETAILS_ENDPOINT + "/" + id).
         when()
@@ -45,7 +45,7 @@ public class StepDefinitions extends TestBase {
         then()
                 .spec(specifications.setupResponseSpecification())
                 .extract()
-                .body();
+                .as(StudentResponse.class);
     }
 
     @And("middle name of student is changed")
@@ -53,8 +53,9 @@ public class StepDefinitions extends TestBase {
         given()
                 .spec(specifications.setupRequestSpecification())
                 .basePath(STUDENT_DETAILS_ENDPOINT + "/" + id)
-                //.body(studentResponse.getData().setMiddle_name("kk")).
-        .when()
+                //TODO Poprawić tak aby middle_name się zmieniało na inne
+                .body(studentResponse.getData().getMiddle_name()).
+        when()
                 .put().
         then()
                 .spec(specifications.setupResponseSpecification())
