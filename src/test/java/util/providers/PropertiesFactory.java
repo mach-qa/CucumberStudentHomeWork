@@ -1,12 +1,16 @@
-package providers;
+package util.providers;
 
-import helpers.YamlReader;
-import models.TestData;
-import models.UrlData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import util.reader.YamlReader;
+import util.yamlModels.TestData;
+import util.yamlModels.UrlData;
 
 import java.util.Map;
 
 public class PropertiesFactory {
+
+    private static final Logger logger = LoggerFactory.getLogger("PropertiesFactory.class");
     YamlReader yamlReader = new YamlReader();
     protected UrlData urlData;
     protected TestData testData;
@@ -25,6 +29,7 @@ public class PropertiesFactory {
     }
 
     private void setUrlProperties() {
+        logger.info("<------------------Start setting properties for URL data------------------>");
         urlData = yamlReader.getConfig().getUrlData();
         Map<String, Object> urlDataProperties = urlData.getUrlProperties();
         for (Map.Entry entry : urlDataProperties.entrySet()) {
@@ -33,6 +38,7 @@ public class PropertiesFactory {
     }
 
     private void setTestDataProperties() {
+        logger.info("<------------------Start setting properties for Test data------------------>");
         testData = yamlReader.getConfig().getTestData();
         Map<String, Object> testDataProperties = testData.getDataProperties();
         for (Map.Entry entry : testDataProperties.entrySet()) {

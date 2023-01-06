@@ -1,4 +1,4 @@
-package models;
+package util.yamlModels;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -7,7 +7,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class UrlData {
-
     Map<String, Object> urlProperties = new LinkedHashMap<>();
 
     @JsonAnySetter

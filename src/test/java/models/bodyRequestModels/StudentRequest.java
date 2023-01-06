@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class StudentRequest {
 
-    private String firstName;
-    private String middleName;
-    private String lastName;
-    private String dateOfBirth;
+    private String first_name;
+    private String middle_name;
+    private String last_name;
+    private String date_of_birth;
 }

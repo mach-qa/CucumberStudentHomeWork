@@ -19,7 +19,7 @@
         <assertj.version>3.23.1</assertj.version>
         <cucumber.version>7.8.0</cucumber.version>
         <rest-assured.version>5.2.0</rest-assured.version>
-        <java.faker.version>1.0.2</java.faker.version>
+        <datafaker.version>1.7.0</datafaker.version>
     </properties>
 
     <dependencies>
@@ -154,9 +154,9 @@
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>${java.faker.version}</version>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>${datafaker.version}</version>
         </dependency>
 
     </dependencies>

@@ -9,7 +9,7 @@ import static io.cucumber.core.options.Constants.GLUE_PROPERTY_NAME;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "apiTests.stepdefs")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepDefinitions")
 @ConfigurationParameter(key = FEATURES_PROPERTY_NAME, value = "classpath:features")
 public class RunCucumberTest {
 }

@@ -1,5 +1,5 @@
-Feature: Add a new student into Database
-  Scenario: Bla Bla bla
+Feature: Add, Edit and Remove Student object
+  Scenario: Student is editable and removable
     Given new Students is registered
     When details of student are saved
     And middle name of student is changed

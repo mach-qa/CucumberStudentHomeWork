@@ -12,5 +12,4 @@ public class StudentResponse {
 
     private String status;
     private Data data;
-
 }

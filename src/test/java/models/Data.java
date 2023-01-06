@@ -2,7 +2,6 @@ package models;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import models.bodyRequestModels.StudentRequest;
 
 @AllArgsConstructor
 @NoArgsConstructor

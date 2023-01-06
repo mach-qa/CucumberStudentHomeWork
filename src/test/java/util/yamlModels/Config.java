@@ -1,4 +1,4 @@
-package models;
+package util.yamlModels;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

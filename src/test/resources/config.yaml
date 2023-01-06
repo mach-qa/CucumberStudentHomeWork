@@ -1,0 +1,10 @@
+urlData:
+  baseURL: https://thetestingworldapi.com/
+  apiPath: api/
+  studentsDetailsEndpoint: studentsDetails/
+testData:
+  studentFirstName: John
+  studentMiddleName: Kevin
+  studentLastName: Smith
+  studentDateOfBirth: 09/09/2022
+  doesNotFoundErrorMsg: Not Found

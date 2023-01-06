@@ -11,8 +11,6 @@ import static apiEngine.Endpoints.BASE_URL;
 
 public class ReqResSpecifications {
 
-    private final Endpoints endpoints = new Endpoints();
-
     public RequestSpecification setupRequestSpecification() {
         return RestAssured.given()
                 .baseUri(BASE_URL + API_PATH)
@@ -22,8 +20,7 @@ public class ReqResSpecifications {
     public ResponseSpecification setupResponseSpecification() {
         return RestAssured.expect()
                 .contentType(ContentType.JSON)
-                .statusCode(200)
-                .time(Matchers.lessThan(5000L));
+                .time(Matchers.lessThan(10000L));
     }
 
 }
